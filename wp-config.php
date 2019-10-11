@@ -110,10 +110,15 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 //Relative URLs for swapping across app service deployment slots 
-define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+/*define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
 define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
 define('WP_CONTENT_URL', '/wp-content');
-define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));*/
+
+define('WP_HOME', 'http://glbi-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
+define('WP_SITEURL', 'http://glbi-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
+define('WP_CONTENT_URL', '/wp-content');
+define('DOMAIN_CURRENT_SITE', 'http://glbi-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
 
 
 /** Absolute path to the WordPress directory. */
@@ -122,3 +127,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+remove_action('template_redirect', 'redirect_canonical');
