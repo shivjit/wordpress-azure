@@ -115,10 +115,10 @@ define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_S
 define('WP_CONTENT_URL', '/wp-content');
 define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));*/
 
-define('WP_HOME', 'http://glbi-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
-define('WP_SITEURL', 'http://glbi-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
+define('WP_HOME', 'http://gbli-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
+define('WP_SITEURL', 'http://gbli-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
 define('WP_CONTENT_URL', '/wp-content');
-define('DOMAIN_CURRENT_SITE', 'http://glbi-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
+define('DOMAIN_CURRENT_SITE', 'http://gbli-epluspubappgw-pip-systest.eastus.cloudapp.azure.com');
 
 
 /** Absolute path to the WordPress directory. */
